@@ -1,0 +1,55 @@
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.deps.json
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.runtimeconfig.json
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.runtimeconfig.dev.json
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.dll
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.AssemblyReference.cache
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfoInputs.cache
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfo.cs
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CoreCompileInputs.cache
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CopyComplete
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.dll
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+D:\Users\XE458\OneDrive - Synovus\Desktop\New folder\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.genruntimeconfig.cache
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.deps.json
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.runtimeconfig.json
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.runtimeconfig.dev.json
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.dll
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csprojAssemblyReference.cache
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfoInputs.cache
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfo.cs
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CoreCompileInputs.cache
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CopyComplete
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.dll
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+C:\Users\kalyan.goud\Downloads\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara_17-02-2022\NeoSoft_Tarun_Bommadevara.Web\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.genruntimeconfig.cache
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.deps.json
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.dll
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csprojAssemblyReference.cache
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfoInputs.cache
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfo.cs
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CoreCompileInputs.cache
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CopyComplete
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.dll
+C:\Users\kalyan.goud\source\repos\NeoSoft\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.deps.json
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.dll
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csprojAssemblyReference.cache
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfoInputs.cache
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfo.cs
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CoreCompileInputs.cache
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CopyComplete
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.dll
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.pdb

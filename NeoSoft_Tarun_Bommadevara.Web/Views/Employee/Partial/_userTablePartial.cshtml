@@ -1,0 +1,26 @@
+﻿@model NeoSoft_Tarun_Bommadevara.Web.ViewModels.EmployeeViewModel
+
+<tbody>
+    @{
+        var users = Model.Employees.ToArray();
+
+        for (int i = 0; i < users.Count(); i++)
+        {
+            var user = users[i];
+            string gender = @user.Gender == 1 ? "Male" : "Female";
+            string isActive = @user.IsActive == true ? "Yes" : "No";
+        <tr class=@(i % 2 == 0 ? "" : "table-secondary")>
+            <td scope="col">@(user.EmailAddress)</td>
+            <td scope="col">@user.Country.CountryName</td>
+            <td scope="col">@user.State.StateName</td>
+            <td scope="col">@user.City.CityName</td>
+            <td scope="col">@user.PanNumber</td>
+            <td scope="col">@gender</td>
+            <td scope="col">@isActive</td>
+            <td scope="col">@user.ProfileImage</td>
+            <td scope="col"><a href="@Url.Action("GetRecord", "Employee",new { userId = user.Row_Id})"><img src="~/Images/pencil-square.svg" /></a>
+                            <a href="@Url.Action("RemoveRecord", "Employee",new { userId = user.Row_Id})"><img src="~/Images/trash3.svg" /></a></td>
+        </tr>
+        }
+    }
+</tbody>

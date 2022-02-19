@@ -1,0 +1,246 @@
+﻿@model NeoSoft_Tarun_Bommadevara.Web.ViewModels.EmployeeViewModel
+<div class="mb-2"><small><a asp-action="ViewRecords">Home</a>/Employee Registration</small></div>
+<form method="post" style="overflow-x:hidden">
+    <div class="offset-3">
+        <span class=" row col-sm-6 border pl-5  pb-1 mb-1 font-weight-bold" style="background-color: #dee2e6;">
+            Employee Registration
+        </span>
+        <input class="form-control" type="hidden" id="" asp-for="Row_Id" />
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">First Name:</label>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <input class="form-control" type="text" id="" asp-for="FirstName" placeholder="First Name" required />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Last Name:</label>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <input class="form-control" type="text" asp-for="LastName" placeholder="Last Name" id="" required />
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Email Address:</label>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <input class="form-control" type="text" asp-for="EmailAddress" placeholder="Email Address" id="" required />
+                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="" style="white-space:nowrap">Mobile Number:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <input class="form-control" type="text" asp-for="MobileNumber" placeholder="Mobile Number" id="" required />
+                    <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Pan Number:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <input class="form-control" type="text" asp-for="PanNumber" placeholder="Pan Number" id="" required />
+                    <span asp-validation-for="PanNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="" style="white-space:nowrap">Passport Number:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div>
+                    <input class="form-control" type="text" asp-for="PassportNumber" placeholder="Passport Number" id="" required />
+                    <span asp-validation-for="PassportNumber" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Date of birth:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <input class="form-control" type="date" asp-for="DateOfBirth" placeholder="MM/dd/yyyy" id="dob" required />
+                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Date of joinee:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <input class="form-control" type="date" asp-for="DateOfJoinee" placeholder="Date of joinee" id="" required />
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Country:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <select asp-for="CountryId" class="form-control">
+                        <option>Select Country</option>
+                        @foreach (var item in Model.CountryList)
+                        {
+            <option value="@item.Row_Id">@item.CountryName</option>}
+                    </select>
+                    <span asp-validation-for="CountryId" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">State:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <select asp-for="StateId" class="form-control">
+                        <option>Select State</option>
+                        @foreach (var item in Model.StateList)
+                        {
+            <option value="@item.Row_Id">@item.StateName</option>}
+                    </select>
+                    <span asp-validation-for="StateId" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">City:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="">
+                    <select asp-for="CityId" class="form-control">
+                        <option>Select City</option>
+                        @foreach (var item in Model.CityList)
+                        {
+            <option value="@item.Row_Id">@item.CityName</option>}
+                    </select>
+                    <span asp-validation-for="CityId" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Profile Picture:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4 ml-3">
+                <div class="">
+                    <input type="file" name="files" asp-for="ProfileImage" id="uploadBox" onchange="javascript:updateList()" multiple class="form-control custom-file-input" />
+                    <label class="custom-file-label"> choose</label>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Gender:</label>
+                </div>
+            </div>
+            <div class="col-sm-1 ">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" onchange="addRadioValue()" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Male
+                    </label>
+                </div>
+
+            </div>
+            <div class="col-sm-1">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" onchange="addRadioValue()" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <span asp-validation-for="Gender" class="text-danger"></span>
+            <input type="hidden" asp-for="Gender" id="radioBtnValue" />
+        </div>
+        <div class="row col-sm-12 mb-1" id="">
+            <div class=" col-sm-2">
+                <div class="">
+                    <label class="">Active:</label>
+
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="">
+                    <div class="form-check">
+                        <input class="form-check-input" onchange="addCheckboxValue()" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Active
+                        </label>
+                    </div>
+                </div>
+                <input type="hidden" asp-for="IsActive" id="checkBoxValue" />
+                <span asp-validation-for="IsActive" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row col-sm-12 mb-3 justify-content-center">
+        <div>
+            <button type="submit" asp-action="CreateEmployeePost" class="btn btn-success" style="width:165px">Save</button>
+        </div>
+    </div>
+</form>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/addUpdate.js"></script>
+}
