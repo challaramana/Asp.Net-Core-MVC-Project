@@ -103,6 +103,7 @@ function getCountryData(i) {
                     $("#stateId").append('<option value=' + row.row_Id + '>' + row.stateName + '</option>')
                 });
                 $("#stateId").val(i);
+                $("#cityId").val("");
             }
             else {
                 $("#stateId").empty();
