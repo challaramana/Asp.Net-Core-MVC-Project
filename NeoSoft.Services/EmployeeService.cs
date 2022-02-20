@@ -20,35 +20,38 @@ namespace NeoSoft.Services
             await _unitofWork.EmployeeRepository.AddAsync(employeeMaster);
             _unitofWork.Save();
         }
-        public IEnumerable<City> GetCityDetails()
-        {
-            return _unitofWork.EmployeeRepository.GetCityDetails();
-        }
         public IEnumerable<Country> GetCountryDetails()
         {
             return _unitofWork.EmployeeRepository.GetCountryDetails();
         }
-        public IEnumerable<State> GetStateDetails()
-        {
-            return _unitofWork.EmployeeRepository.GetStateDetails();
-        }
         public async Task<IEnumerable<EmployeeMaster>> GetEmployees()
         {
-            return await _unitofWork.EmployeeRepository.GetAllAsync(i=>i.Row_Id !=0,includeProperties:"Country,City,State");
+            return await _unitofWork.EmployeeRepository.GetAllAsync(i => i.Row_Id != 0, includeProperties: "Country,City,State");
         }
         public async Task<EmployeeMaster> GetEmployeRecord(int id)
         {
-            return await _unitofWork.EmployeeRepository.GetFirstOrDefaultAsync(i => i.Row_Id ==id);
+            return await _unitofWork.EmployeeRepository.GetFirstOrDefaultAsync(i => i.Row_Id == id);
         }
         public async Task RemoveEmployeRecord(int id)
         {
-             await _unitofWork.EmployeeRepository.RemoveAsync(id);
+            await _unitofWork.EmployeeRepository.RemoveAsync(id);
             _unitofWork.Save();
         }
         public async Task UpdateRecord(EmployeeMaster model)
         {
             await _unitofWork.EmployeeRepository.UdpdateAsync(model);
             _unitofWork.Save();
+        }
+
+        public async Task<IEnumerable<State>> GetStateDropDownData(int id)
+        {
+            var stateData = await _unitofWork.StateRepository.GetAllAsync(i=>i.CountryId==id);
+            return stateData;
+        }
+        public async Task<IEnumerable<City>> GetCityDropDownData(int id)
+        {
+            var cityData = await _unitofWork.CityRepository.GetAllAsync(i => i.StateId == id);
+            return cityData;
         }
     }
 }

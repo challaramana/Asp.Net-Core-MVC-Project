@@ -34,9 +34,7 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         [HttpGet]
         public IActionResult CreateEmployee(EmployeeViewModel employeeViewModel)
         {
-            employeeViewModel.CityList = _employeeService.GetCityDetails();
             employeeViewModel.CountryList = _employeeService.GetCountryDetails();
-            employeeViewModel.StateList = _employeeService.GetStateDetails();
             ModelState.Clear();
             return View(employeeViewModel);
         }
@@ -49,10 +47,8 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
                 model.CreatedDate = DateTime.Now;
                 model.IsActive = response.IsActive == true ? true : false;
                 await _employeeService.AddEmployee(model);
-                response.CityList = _employeeService.GetCityDetails();
                 response.CountryList = _employeeService.GetCountryDetails();
-                response.StateList = _employeeService.GetStateDetails();
-               
+
                 return RedirectToAction("ViewRecords");
             }
             else
@@ -61,9 +57,7 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
                 model.UpdatedDate = DateTime.Now;
                 model.IsActive = response.IsActive == true ? true : false;
                 await _employeeService.UpdateRecord(model);
-                response.CityList = _employeeService.GetCityDetails();
                 response.CountryList = _employeeService.GetCountryDetails();
-                response.StateList = _employeeService.GetStateDetails();
                 return RedirectToAction("ViewRecords");
             }
         }
@@ -84,6 +78,18 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         {
             await _employeeService.RemoveEmployeRecord(userId);
             return RedirectToAction("ViewRecords");
+        }
+
+        public async Task<IActionResult> GetStateDropdownData(int id)
+        {
+            var data = await _employeeService.GetStateDropDownData(id);
+            return Json(data);
+        }
+
+        public async Task<IActionResult> GetCityDropdownData(int id)
+        {
+            var data = await _employeeService.GetCityDropDownData(id);
+            return Json(data);
         }
     }
 }

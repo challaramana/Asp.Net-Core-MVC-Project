@@ -14,13 +14,21 @@ namespace NeoSoft.Infrastructure.UnitOfWork
         {
             _dbContext = dbContext;
             EmployeeRepository = new EmployeeRepository(_dbContext);
+            StateRepository = new StateRepository(_dbContext);
+            CityRepository = new CityRepository(_dbContext);
         }
-
+        public ICityRepository  CityRepository
+        {
+            get; private set;
+        }
         public IEmployeeRepository EmployeeRepository
         {
             get; private set;
         }
-       
+        public IStateRepository StateRepository
+        {
+            get; private set;
+        }
         public void Dispose()
         {
             _dbContext.Dispose();

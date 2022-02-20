@@ -19,13 +19,13 @@ namespace NeoSoft.Infrastructure.Repositories
         {
             return _context.Country.AsQueryable();
         }
-        public IQueryable<State> GetStateDetails()
+        public IQueryable<State> GetStateDetails(int id)
         {
-            return _context.State.AsQueryable();
+            return _context.State.Where(i=>i.CountryId==id).AsQueryable();
         }
-        public IQueryable<City> GetCityDetails()
+        public IQueryable<City> GetCityDetails(int id)
         {
-            return _context.City.AsQueryable();
+            return _context.City.Where(i => i.StateId == id).AsQueryable();
         }
 
     }

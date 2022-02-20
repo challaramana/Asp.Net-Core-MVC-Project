@@ -125,11 +125,12 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <select asp-for="CountryId" class="form-control">
+                    <select asp-for="CountryId" id="countryId" class="form-control" onchange="getCountryData('')">
                         <option>Select Country</option>
                         @foreach (var item in Model.CountryList)
                         {
-            <option value="@item.Row_Id">@item.CountryName</option>}
+            <option value="@item.Row_Id">@item.CountryName</option>
+}
                     </select>
                     <span asp-validation-for="CountryId" class="text-danger"></span>
                 </div>
@@ -144,12 +145,11 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <select asp-for="StateId" class="form-control">
+                    @*@Html.DropDownListFor(x => Model.StateId, new SelectList(" "), "--Please Select--", htmlAttributes: new { @class = "form-control w-100", id = "stateId"})*@
+                    <select asp-for="StateId" id="stateId" class="form-control" onchange="getStateData('')">
                         <option>Select State</option>
-                        @foreach (var item in Model.StateList)
-                        {
-            <option value="@item.Row_Id">@item.StateName</option>}
                     </select>
+                    <input type="hidden" value="@Model.StateId" id="stateHidden"/>
                     <span asp-validation-for="StateId" class="text-danger"></span>
                 </div>
             </div>
@@ -158,17 +158,15 @@
             <div class=" col-sm-2">
                 <div class="">
                     <label class="">City:</label>
-
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <select asp-for="CityId" class="form-control">
+                    @*@Html.DropDownListFor(x => Model.CityId, new SelectList(" "), "--Please Select--", htmlAttributes: new { @class = "form-control w-100", id = "cityId" })*@
+                    <select asp-for="CityId" id="cityId" class="form-control">
                         <option>Select City</option>
-                        @foreach (var item in Model.CityList)
-                        {
-            <option value="@item.Row_Id">@item.CityName</option>}
                     </select>
+                    <input type="hidden" value="@Model.CityId" id="cityHidden" />
                     <span asp-validation-for="CityId" class="text-danger"></span>
                 </div>
             </div>
@@ -211,7 +209,7 @@
                 </div>
             </div>
             <span asp-validation-for="Gender" class="text-danger"></span>
-            <input type="hidden" asp-for="Gender" id="radioBtnValue" />
+            <input type="hidden" asp-for="Gender" id="radioBtnValue"/>
         </div>
         <div class="row col-sm-12 mb-1" id="">
             <div class=" col-sm-2">

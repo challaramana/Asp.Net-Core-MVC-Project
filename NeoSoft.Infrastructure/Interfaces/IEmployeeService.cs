@@ -9,10 +9,10 @@ namespace NeoSoft.Infrastructure.Interfaces
 {
     public interface IEmployeeService
     {
+        Task<IEnumerable<State>> GetStateDropDownData(int id);
+        Task<IEnumerable<City>> GetCityDropDownData(int id);
         Task AddEmployee(EmployeeMaster employeeMaster);
         IEnumerable<Country> GetCountryDetails();
-        IEnumerable<State> GetStateDetails();
-        IEnumerable<City> GetCityDetails();
         Task<IEnumerable<EmployeeMaster>> GetEmployees();
         Task<EmployeeMaster> GetEmployeRecord(int id);
         Task RemoveEmployeRecord(int id);

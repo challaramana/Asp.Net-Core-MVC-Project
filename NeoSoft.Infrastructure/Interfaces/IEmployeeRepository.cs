@@ -9,7 +9,7 @@ namespace NeoSoft.Infrastructure.Interfaces
     public interface IEmployeeRepository : IGenericRepository<EmployeeMaster>
     {
         IQueryable<Country> GetCountryDetails();
-        IQueryable<State> GetStateDetails();
-        IQueryable<City> GetCityDetails();
+        IQueryable<State> GetStateDetails(int id);
+        IQueryable<City> GetCityDetails(int id);
     }
 }
