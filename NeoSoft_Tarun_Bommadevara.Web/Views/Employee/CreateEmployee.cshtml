@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <input class="form-control" type="text" id="" asp-for="FirstName" placeholder="First Name" required />
+                <input class="form-control" type="text" id="" asp-for="FirstName" placeholder="First Name" autocomplete="off" required maxlength="50" />
                 <span asp-validation-for="FirstName" class="text-danger"></span>
             </div>
         </div>
@@ -25,8 +25,8 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="text" asp-for="LastName" placeholder="Last Name" id="" required />
-                    <span class="text-danger"></span>
+                    <input class="form-control" type="text" asp-for="LastName" placeholder="Last Name"  autocomplete="off" id=""  maxlength="50" />
+                    <span class="text-danger" asp-validation-for="LastName"></span>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="text" asp-for="EmailAddress" placeholder="Email Address" id="" required />
+                    <input class="form-control" type="text" asp-for="EmailAddress" placeholder="Email Address"  autocomplete="off" id="" required maxlength="100"/>
                     <span asp-validation-for="EmailAddress" class="text-danger"></span>
                 </div>
             </div>
@@ -53,7 +53,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="text" asp-for="MobileNumber" placeholder="Mobile Number" id="" required />
+                    <input class="form-control" type="text" asp-for="MobileNumber"  autocomplete="off" placeholder="Mobile Number" id="" required maxlength="15" />
                     <span asp-validation-for="MobileNumber" class="text-danger"></span>
                 </div>
             </div>
@@ -68,7 +68,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="text" asp-for="PanNumber" placeholder="Pan Number" id="" required />
+                    <input class="form-control" type="text" asp-for="PanNumber"  autocomplete="off" placeholder="Pan Number" id="" required maxlength="12" />
                     <span asp-validation-for="PanNumber" class="text-danger"></span>
                 </div>
             </div>
@@ -83,7 +83,7 @@
             </div>
             <div class="col-sm-4">
                 <div>
-                    <input class="form-control" type="text" asp-for="PassportNumber" placeholder="Passport Number" id="" required />
+                    <input class="form-control" type="text" asp-for="PassportNumber"  autocomplete="off" placeholder="Passport Number" id="" required maxlength="20" />
                     <span asp-validation-for="PassportNumber" class="text-danger"></span>
                 </div>
             </div>
@@ -97,7 +97,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="date" asp-for="DateOfBirth" placeholder="MM/dd/yyyy" id="dob" required />
+                    <input class="form-control" type="date" asp-for="DateOfBirth" autocomplete="off" placeholder="MM/dd/yyyy" id="dob" required />
                     <span asp-validation-for="DateOfBirth" class="text-danger"></span>
                 </div>
             </div>
@@ -112,7 +112,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="date" asp-for="DateOfJoinee" placeholder="Date of joinee" id="" required />
+                    <input class="form-control" type="date"  autocomplete="off" asp-for="DateOfJoinee" placeholder="Date of joinee" id="" required />
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <select asp-for="CountryId" id="countryId" class="form-control" onchange="getCountryData('')">
+                    <select asp-for="CountryId" id="countryId" class="form-control" onchange="getCountryData('')" required>
                         <option>Select Country</option>
                         @foreach (var item in Model.CountryList)
                         {
@@ -180,7 +180,7 @@
             </div>
             <div class="col-sm-4 ml-3">
                 <div class="">
-                    <input type="file" name="files" asp-for="ProfileImage" id="uploadBox" onchange="javascript:updateList()" multiple class="form-control custom-file-input" />
+                    <input type="file" name="files" asp-for="ProfileImage" autocomplete="off" id="uploadBox" maxlength="100" onchange="javascript:updateList()" multiple class="form-control custom-file-input" />
                     <label class="custom-file-label"> choose</label>
                 </div>
             </div>
