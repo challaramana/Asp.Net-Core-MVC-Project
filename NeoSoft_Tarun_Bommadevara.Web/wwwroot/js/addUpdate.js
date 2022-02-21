@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {   
+﻿$(document).ready(function () {
     if ($("#stateHidden").val() != "") {
         getCountryData($("#stateHidden").val());
     }
@@ -43,55 +43,24 @@ function addRadioValue() {
         $("#radioBtnValue").val('0');
     }
 }
+function listofFilesUploaded() {
+    $("#fileName").empty();
+    var fp = $("#uploadBox");
+    var lg = fp[0].files.length;
+    var items = fp[0].files;
+    var fragment = "";
+    if (lg > 0) {
+        for (var i = 0; i < lg; i++) {
+            var fileName = items[i].name; // get file name
+            var fileSize = items[i].size; // get file size 
+            var fileType = items[i].type; // get file type
+            fragment += "<li>" + fileName + " (<b>" + fileSize + "</b> bytes) - Type :" + fileType + "</li>";
+        }
+        $("#fileName").show();
+    } 
+    $("#fileName").append(fragment);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//$(document).ready(function () {
-//    $("form").on("submit", function (e) {
-//        e.preventDefault();
-
-//        var data = $("form").serialize();
-//        var url = snvBaseUrl + "/Admin/UpdateLogLevel";
-
-//        $.ajax({
-//            data: data,
-//            url: url,
-//            type: "POST",
-//            success: function (response) {
-//                if (response.success) {
-//                    showToast("Logging level successfully updated.");
-//                }
-//                else {
-//                    showToast("Failed to update logging level.");
-//                }
-//            },
-//            error: function () {
-//                showToast("Failed to update logging level.");
-//            }
-//        })
-//    });
-//});
-
-
-
-
+}
 function getCountryData(i) {
     var url = "/Employee/GetStateDropdownData";
     let value = i != "" ? i : $("#countryId").val();
@@ -119,7 +88,6 @@ function getCountryData(i) {
         }
     })
 };
-console.log($("#stateHidden").val());
 function getStateData(i) {
     let value = i != "" ? i : $("#stateId").val();
     var url = "/Employee/GetCityDropdownData";

@@ -1,10 +1,13 @@
 ﻿@model NeoSoft_Tarun_Bommadevara.Web.ViewModels.EmployeeViewModel
-    <div class="mb-2"><small><a asp-action="CreateEmployee">Add/Update Employee</a></small></div>
 @{
-    if (Model.Employees.Count() !=0)
+    ViewData["Title"] = "View Records";
+}
+<div class="mb-2"><small><a asp-action="CreateEmployee">Add/Update Employee</a></small></div>
+@{
+    if (Model.Employees.Count() != 0)
     {
-        <div class="overflow-auto">
-            <table id="snv-main-table" class="table table-bordered table-responsive-sm">
+        <div class="overflow-auto" >
+            <table id="snv-main-table" class="table table-bordered table-responsive-sm" style="overflow-x:hidden">
                 <thead>
                     <tr class="table-secondary">
                         <th scope="col">
@@ -21,6 +24,9 @@
                         </th>
                         <th scope="col">
                             Pan No
+                        </th>
+                        <th scope="col">
+                            Passport No
                         </th>
                         <th scope="col">
                             Gender
@@ -42,12 +48,12 @@
     }
     else
     {
-        <div id="no-records-display" >
+        <div id="no-records-display">
             No users available.
         </div>
     }
 }
 
 @section Scripts {
-   
+ 
 }

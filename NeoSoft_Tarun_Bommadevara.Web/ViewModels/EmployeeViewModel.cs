@@ -1,4 +1,5 @@
 ﻿using NeoSoft.Infrastructure.EF.Models;
+using NeoSoft.Infrastructure.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

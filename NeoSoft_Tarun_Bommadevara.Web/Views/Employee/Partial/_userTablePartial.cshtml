@@ -1,5 +1,5 @@
 ﻿@model NeoSoft_Tarun_Bommadevara.Web.ViewModels.EmployeeViewModel
-
+@using NeoSoft.Infrastructure.Utility;
 <tbody>
     @{
         var users = Model.Employees.ToArray();
@@ -9,18 +9,26 @@
             var user = users[i];
             string gender = @user.Gender == 1 ? "Male" : "Female";
             string isActive = @user.IsActive == true ? "Yes" : "No";
-        <tr class=@(i % 2 == 0 ? "" : "table-secondary")>
-            <td scope="col">@(user.EmailAddress)</td>
-            <td scope="col">@user.Country.CountryName</td>
-            <td scope="col">@user.State.StateName</td>
-            <td scope="col">@user.City.CityName</td>
-            <td scope="col">@user.PanNumber</td>
-            <td scope="col">@gender</td>
-            <td scope="col">@isActive</td>
-            <td scope="col">@user.ProfileImage</td>
-            <td scope="col"><a href="@Url.Action("GetRecord", "Employee",new { userId = user.Row_Id})"><img src="~/Images/pencil-square.svg" /></a>
-                            <a href="@Url.Action("RemoveRecord", "Employee",new { userId = user.Row_Id})"><img src="~/Images/trash3.svg" /></a></td>
-        </tr>
+            <tr class=@(i % 2 == 0 ? "" : "table-secondary")>
+                <td scope="col">@(user.EmailAddress)</td>
+                <td scope="col">@user.Country.CountryName</td>
+                <td scope="col">@user.State.StateName</td>
+                <td scope="col">@user.City.CityName</td>
+                <td scope="col">@user.PanNumber</td>
+                <td scope="col">@user.PassportNumber</td>
+                <td scope="col">@gender</td>
+                <td scope="col">@isActive</td>
+                <td scope="col">
+                    @if (user.ProfileImage != null)
+                    {
+                        <img src="@AppConstants.ImagePath@user.ProfileImage" width="130" style="height:100px" id="myImg" />
+                    }
+                </td>
+                <td scope="col">
+                    <a href="@Url.Action("GetRecord", "Employee",new { userId = user.Row_Id})"><img src="~/Images/pencil-square.svg" /></a>
+                    <a href="@Url.Action("RemoveRecord", "Employee",new { userId = user.Row_Id})"><img src="~/Images/trash3.svg" /></a>
+                </td>
+            </tr>
         }
     }
 </tbody>

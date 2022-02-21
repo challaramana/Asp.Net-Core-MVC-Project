@@ -1,12 +1,15 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using NeoSoft.Infrastructure.EF.Models;
 using NeoSoft.Infrastructure.Interfaces;
+using NeoSoft.Infrastructure.Utility;
 using NeoSoft_Tarun_Bommadevara.Web.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,15 +20,17 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         private readonly IEmployeeService _employeeService;
         private readonly ILogger<EmployeeController> _logger;
         public readonly IConfiguration _Configuration;
+        private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IMapper _mapper;
         // private string apiBaseUrl;
-        public EmployeeController(IEmployeeService employeeService, ILogger<EmployeeController> logger,
+        public EmployeeController(IEmployeeService employeeService, IWebHostEnvironment webHostEnvironment, ILogger<EmployeeController> logger,
             IConfiguration Configuration, IMapper mapper)
         {
             _employeeService = employeeService;
             _logger = logger;
             _Configuration = Configuration;
             _mapper = mapper;
+            _webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
@@ -41,9 +46,19 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateEmployeePost(EmployeeViewModel response)
         {
+            var files = HttpContext.Request.Form.Files;
+            string webRootPath = _webHostEnvironment.WebRootPath;
             if (response.Row_Id == 0)
             {
                 var model = _mapper.Map<EmployeeMaster>(response);
+                string upload = webRootPath + AppConstants.ImagePath;
+                string fileName = Guid.NewGuid().ToString();
+                string extension = Path.GetExtension(files[0].FileName);
+                using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                {
+                    files[0].CopyTo(fileStream);
+                }
+                model.ProfileImage = fileName + extension;
                 model.CreatedDate = DateTime.Now;
                 model.IsActive = response.IsActive == true ? true : false;
                 await _employeeService.AddEmployee(model);
@@ -53,6 +68,26 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
             else
             {
                 var model = _mapper.Map<EmployeeMaster>(response);
+                if (files.Count > 0)
+                {
+                    string upload = webRootPath + AppConstants.ImagePath;
+                    string fileName = Guid.NewGuid().ToString();
+                    string extension = Path.GetExtension(files[0].FileName);
+
+                    var oldFile = Path.Combine(upload, response.ProfileImage == null ? "" : response.ProfileImage);
+
+                    if (System.IO.File.Exists(oldFile))
+                    {
+                        System.IO.File.Delete(oldFile);
+                    }
+
+                    using (var fileStream = new FileStream(Path.Combine(upload, fileName + extension), FileMode.Create))
+                    {
+                        files[0].CopyTo(fileStream);
+                    }
+
+                    model.ProfileImage = fileName + extension;
+                }
                 model.UpdatedDate = DateTime.Now;
                 model.IsActive = response.IsActive == true ? true : false;
                 await _employeeService.UpdateRecord(model);
