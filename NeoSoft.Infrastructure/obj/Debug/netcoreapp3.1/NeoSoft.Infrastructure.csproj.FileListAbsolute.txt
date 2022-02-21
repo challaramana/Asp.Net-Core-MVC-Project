@@ -47,3 +47,16 @@ C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.genruntimeconfig.cache
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.deps.json
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.runtimeconfig.json
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.runtimeconfig.dev.json
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.AssemblyInfo.cs
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.genruntimeconfig.cache

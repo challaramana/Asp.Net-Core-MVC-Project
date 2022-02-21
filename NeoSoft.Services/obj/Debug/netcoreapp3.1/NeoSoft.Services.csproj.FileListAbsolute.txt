@@ -53,3 +53,16 @@ C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CopyComplete
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.dll
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.deps.json
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.dll
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Services.pdb
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.AssemblyReference.cache
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfoInputs.cache
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.AssemblyInfo.cs
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CoreCompileInputs.cache
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.csproj.CopyComplete
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.dll
+C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Services\obj\Debug\netcoreapp3.1\NeoSoft.Services.pdb
