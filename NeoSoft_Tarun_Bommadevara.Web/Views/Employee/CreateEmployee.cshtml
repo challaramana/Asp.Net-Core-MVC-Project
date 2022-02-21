@@ -1,4 +1,7 @@
 ﻿@model NeoSoft_Tarun_Bommadevara.Web.ViewModels.EmployeeViewModel
+@{ 
+    ViewData["Title"] = "Create/ Update";
+}
 <div class="mb-2"><small><a asp-action="ViewRecords">Home</a>/Employee Registration</small></div>
 <form method="post" style="overflow-x:hidden">
     <div class="offset-3">
@@ -6,6 +9,8 @@
             Employee Registration
         </span>
         <input class="form-control" type="hidden" id="" asp-for="Row_Id" />
+        <input class="form-control" type="hidden" id="" asp-for="CreatedDate" />
+        <input class="form-control" type="hidden" id="" asp-for="UpdatedDate" />
         <div class="row col-sm-12 mb-1" id="">
             <div class=" col-sm-2">
                 <div class="">
@@ -25,7 +30,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="text" asp-for="LastName" placeholder="Last Name"  autocomplete="off" id=""  maxlength="50" />
+                    <input class="form-control" type="text" asp-for="LastName" placeholder="Last Name" autocomplete="off" id="" maxlength="50" />
                     <span class="text-danger" asp-validation-for="LastName"></span>
                 </div>
             </div>
@@ -38,7 +43,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="text" asp-for="EmailAddress" placeholder="Email Address"  autocomplete="off" id="" required maxlength="100"/>
+                    <input class="form-control" type="text" asp-for="EmailAddress" placeholder="Email Address" autocomplete="off" id="" required maxlength="100" />
                     <span asp-validation-for="EmailAddress" class="text-danger"></span>
                 </div>
             </div>
@@ -53,7 +58,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="text" asp-for="MobileNumber"  autocomplete="off" placeholder="Mobile Number" id="" required maxlength="15" />
+                    <input class="form-control" type="text" asp-for="MobileNumber" autocomplete="off" placeholder="Mobile Number" id="" required maxlength="15" />
                     <span asp-validation-for="MobileNumber" class="text-danger"></span>
                 </div>
             </div>
@@ -68,7 +73,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="text" asp-for="PanNumber"  autocomplete="off" placeholder="Pan Number" id="" required maxlength="12" />
+                    <input class="form-control" type="text" asp-for="PanNumber" autocomplete="off" placeholder="Pan Number" id="" required maxlength="12" />
                     <span asp-validation-for="PanNumber" class="text-danger"></span>
                 </div>
             </div>
@@ -83,7 +88,7 @@
             </div>
             <div class="col-sm-4">
                 <div>
-                    <input class="form-control" type="text" asp-for="PassportNumber"  autocomplete="off" placeholder="Passport Number" id="" required maxlength="20" />
+                    <input class="form-control" type="text" asp-for="PassportNumber" autocomplete="off" placeholder="Passport Number" id="" required maxlength="20" />
                     <span asp-validation-for="PassportNumber" class="text-danger"></span>
                 </div>
             </div>
@@ -97,8 +102,8 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="date" asp-for="DateOfBirth" autocomplete="off" placeholder="MM/dd/yyyy" id="dob" required />
-                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                    <input class="form-control report-datepicker" type="text" asp-for="DateOfBirth" autocomplete="off" placeholder="Date of birth" id="dob" required />
+                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>                  
                 </div>
             </div>
 
@@ -112,7 +117,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <input class="form-control" type="date"  autocomplete="off" asp-for="DateOfJoinee" placeholder="Date of joinee" id="" required />
+                    <input class="form-control report-datepicker" type="text" autocomplete="off" asp-for="DateOfJoinee" placeholder="Date of joinee" id="doj"  />                                
                 </div>
             </div>
         </div>
@@ -125,12 +130,12 @@
             </div>
             <div class="col-sm-4">
                 <div class="">
-                    <select asp-for="CountryId" id="countryId" class="form-control" onchange="getCountryData('')" required>
+                    <select asp-for="CountryId" id="countryId" class="form-control" onchange="getCountryData('')" >
                         <option>Select Country</option>
                         @foreach (var item in Model.CountryList)
                         {
-            <option value="@item.Row_Id">@item.CountryName</option>
-}
+                            <option value="@item.Row_Id">@item.CountryName</option>
+                        }
                     </select>
                     <span asp-validation-for="CountryId" class="text-danger"></span>
                 </div>
@@ -149,7 +154,7 @@
                     <select asp-for="StateId" id="stateId" class="form-control" onchange="getStateData('')">
                         <option>Select State</option>
                     </select>
-                    <input type="hidden" value="@Model.StateId" id="stateHidden"/>
+                    <input type="hidden" value="@Model.StateId" id="stateHidden" />
                     <span asp-validation-for="StateId" class="text-danger"></span>
                 </div>
             </div>
@@ -209,7 +214,7 @@
                 </div>
             </div>
             <span asp-validation-for="Gender" class="text-danger"></span>
-            <input type="hidden" asp-for="Gender" id="radioBtnValue"/>
+            <input type="hidden" asp-for="Gender" id="radioBtnValue" />
         </div>
         <div class="row col-sm-12 mb-1" id="">
             <div class=" col-sm-2">

@@ -48,7 +48,6 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
                 model.IsActive = response.IsActive == true ? true : false;
                 await _employeeService.AddEmployee(model);
                 response.CountryList = _employeeService.GetCountryDetails();
-
                 return RedirectToAction("ViewRecords");
             }
             else

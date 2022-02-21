@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+﻿$(document).ready(function () {   
     if ($("#stateHidden").val() != "") {
         getCountryData($("#stateHidden").val());
     }
@@ -17,11 +17,15 @@
     else {
         $("#flexCheckDefault").attr('checked', false);
     }
-    console.log($("#radioBtnValue").val());
-    if ($("#dob").val() == "0001-01-01") {
+   
+    $(".report-datepicker").datepicker();
+    $("#dob").datepicker("option", "dateFormat", "mm/dd/yy");
+    $("#doj").datepicker("option", "dateFormat", "mm/dd/yy");
+    $("#dob").datepicker("option", "maxDate", new Date());
+    $("#doj").datepicker("option", "maxDate", new Date());
+    if ($("#dob").val() == "01/01/2001") {
         $("#dob").val('')
-    }
-
+    }    
 });
 function addCheckboxValue() {
     if ($("#flexCheckDefault").is(":checked")) {
