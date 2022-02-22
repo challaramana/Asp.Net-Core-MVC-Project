@@ -125,5 +125,6 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
             var data = await _employeeService.GetCityDropDownData(id);
             return Json(data);
         }
+
     }
 }

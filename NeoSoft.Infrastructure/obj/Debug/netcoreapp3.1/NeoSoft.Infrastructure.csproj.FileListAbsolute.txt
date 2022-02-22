@@ -40,7 +40,6 @@ C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.runtimeconfig.dev.json
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\bin\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
-C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.csprojAssemblyReference.cache
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.AssemblyInfo.cs
 C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.csproj.CoreCompileInputs.cache
