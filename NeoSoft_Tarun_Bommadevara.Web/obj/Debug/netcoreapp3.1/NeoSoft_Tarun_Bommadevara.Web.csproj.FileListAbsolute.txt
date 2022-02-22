@@ -1169,3 +1169,5 @@ C:\Users\ravgoud\Pictures\MyProjects\NeoSoft_Tarun_Bommadevara.Web\obj\Debug\net
 C:\Users\ravgoud\Pictures\MyProjects\NeoSoft_Tarun_Bommadevara.Web\obj\Debug\netcoreapp3.1\NeoSoft_Tarun_Bommadevara.Web.dll
 C:\Users\ravgoud\Pictures\MyProjects\NeoSoft_Tarun_Bommadevara.Web\obj\Debug\netcoreapp3.1\NeoSoft_Tarun_Bommadevara.Web.pdb
 C:\Users\ravgoud\Pictures\MyProjects\NeoSoft_Tarun_Bommadevara.Web\obj\Debug\netcoreapp3.1\NeoSoft_Tarun_Bommadevara.Web.genruntimeconfig.cache
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft_Tarun_Bommadevara.Web\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft_Tarun_Bommadevara.Web\obj\Debug\netcoreapp3.1\Razor\Views\Employee\CSVReports.cshtml.g.cs

@@ -59,3 +59,4 @@ C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp
 C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.dll
 C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.pdb
 C:\Users\ravgoud\Pictures\MyProjects\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.genruntimeconfig.cache
+C:\Users\0004577\Downloads\EmployeeRegisterMVC-master\EmployeeRegisterMVC-master\NeoSoft.Infrastructure\obj\Debug\netcoreapp3.1\NeoSoft.Infrastructure.csprojAssemblyReference.cache

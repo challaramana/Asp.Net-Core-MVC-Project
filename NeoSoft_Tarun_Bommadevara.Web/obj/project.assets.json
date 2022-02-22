@@ -29,6 +29,18 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "CsvHelper/27.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/3.1.22": {
         "type": "package",
         "dependencies": {
@@ -1731,6 +1743,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "CsvHelper": "27.2.1",
           "NeoSoft.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -1770,6 +1783,30 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "CsvHelper/27.2.1": {
+      "sha512": "uS5ix5hL9gL5taiAG//CScyJa8Fn1ZOh3FDhDvf4laboESFs84mCNropfp7PIt8xCkyQofljFpqu1B5UnSXjyA==",
+      "type": "package",
+      "path": "csvhelper/27.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.27.2.1.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/3.1.22": {
@@ -6245,19 +6282,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ravgoud\\.nuget\\packages\\": {}
+    "C:\\Users\\0004577\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft_Tarun_Bommadevara.Web\\NeoSoft_Tarun_Bommadevara.Web.csproj",
+      "projectUniqueName": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft_Tarun_Bommadevara.Web\\NeoSoft_Tarun_Bommadevara.Web.csproj",
       "projectName": "NeoSoft_Tarun_Bommadevara.Web",
-      "projectPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft_Tarun_Bommadevara.Web\\NeoSoft_Tarun_Bommadevara.Web.csproj",
-      "packagesPath": "C:\\Users\\ravgoud\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft_Tarun_Bommadevara.Web\\obj\\",
+      "projectPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft_Tarun_Bommadevara.Web\\NeoSoft_Tarun_Bommadevara.Web.csproj",
+      "packagesPath": "C:\\Users\\0004577\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft_Tarun_Bommadevara.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ravgoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\0004577\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6271,11 +6308,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj"
+            "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj"
             },
-            "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Services\\NeoSoft.Services.csproj": {
-              "projectPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Services\\NeoSoft.Services.csproj"
+            "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Services\\NeoSoft.Services.csproj": {
+              "projectPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Services\\NeoSoft.Services.csproj"
             }
           }
         }
@@ -6323,7 +6360,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using NeoSoft.Infrastructure.EF.DTO;
 using NeoSoft.Infrastructure.EF.Models;
 using NeoSoft.Infrastructure.Interfaces;
 using NeoSoft.Infrastructure.Utility;
@@ -23,7 +24,7 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         public readonly IConfiguration _Configuration;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IMapper _mapper;
-        // private string apiBaseUrl;
+        //private string apiBaseUrl;
         public EmployeeController(IEmployeeService employeeService, IWebHostEnvironment webHostEnvironment, ILogger<EmployeeController> logger,
             IConfiguration Configuration, IMapper mapper)
         {
@@ -89,7 +90,7 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
 
                     model.ProfileImage = fileName + extension;
                 }
-                model.UpdatedDate = DateTime.Now;
+                //model.UpdatedDate = DateTime.Now;
                 model.IsActive = response.IsActive == true ? true : false;
                 await _employeeService.UpdateRecord(model);
                 response.CountryList = _employeeService.GetCountryDetails();
@@ -106,7 +107,7 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         }
         public async Task<IActionResult> updateusertable(NeoSoftViewQuery query)
         {
-            var data = await _employeeService.GetEmployees(query);          
+            var data = await _employeeService.GetEmployees(query);
             return PartialView("~/views/employee/partial/_usertablepartial.cshtml", data);
         }
         public async Task<IActionResult> GetRecord(int userId)
@@ -133,6 +134,11 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
             var data = await _employeeService.GetCityDropDownData(id);
             return Json(data);
         }
-
+        [HttpPost]
+        public async Task<IActionResult> GenerateCsvReports()
+        {
+              await _employeeService.GetCsvData();
+            return Ok(new {success=true });
+        }
     }
 }
