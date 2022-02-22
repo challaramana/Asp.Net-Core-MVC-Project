@@ -3,10 +3,70 @@
     ViewData["Title"] = "View Records";
 }
 <div class="mb-2"><small><a asp-action="CreateEmployee">Add/Update Employee</a></small></div>
+<div style="display:none">
+    <div class="row col-sm-12 mb-1" id="">
+        <div class=" col-sm-2">
+            <div class="">
+                <label class="">Email Address:</label>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="">
+                <input class="form-control" type="text" asp-for="EmailAddress" placeholder="Email Address" autocomplete="off" id="emailAddress" required maxlength="100" />
+            </div>
+        </div>
+        <div class=" col-sm-2">
+            <div class="">
+                <label class="mt-1">Pan Number:</label>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="">
+                <input class="form-control" type="text" asp-for="PanNumber" autocomplete="off" placeholder="Pan Number" id="panNumber" required maxlength="12" />
+            </div>
+        </div>
+    </div>
+    <div class="row col-sm-12 offset-5">  <button class="btn btn-success col-sm-1  btn-sm my-2 mx-1" id="search-button">Search</button></div>
+
+</div>
 @{
-    if (Model.Employees.Count() != 0)
+    if (Model.PaginatedData.EmployeeMasters.Count() != 0)
     {
-        <div class="overflow-auto" >
+        <div class="d-flex align-items-center offset-9 align-self-end my-2">
+            <span class="mr-2 d-flex">
+                <span class="mr-1 mt-1">Show</span>
+                <select class="form-control" id="pageSizeSelect">
+                    <option value="3" selected>3</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                </select>
+            </span>
+            <nav>
+                <ul class="pagination pagination-sm mb-0">
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)" id="page-first-control">&laquo;</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)" id="page-down-control">&lsaquo;</a>
+                    </li>
+                    @{
+                        var currentPage = Model.PaginatedData.CurrentPage;
+                        var pageCount = Model.PaginatedData.PageCount;
+                        var displayText = $"Page {String.Join("/", currentPage.ToString(), pageCount.ToString())}";
+
+                        <li class="page-item align-self-center text-nowrap mx-1" id="page-num-display">@displayText</li>
+                    }
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)" id="page-up-control">&rsaquo;</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)" id="page-last-control">&raquo;</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overflow-auto">
             <table id="snv-main-table" class="table table-bordered table-responsive-sm" style="overflow-x:hidden">
                 <thead>
                     <tr class="table-secondary">
@@ -42,7 +102,7 @@
                         </th>
                     </tr>
                 </thead>
-                @{ @await Html.PartialAsync("Partial/_userTablePartial", Model) }
+                @{ @await Html.PartialAsync("Partial/_userTablePartial", Model.PaginatedData) }
             </table>
         </div>
     }
@@ -55,5 +115,5 @@
 }
 
 @section Scripts {
- 
+    <script src="~/js/viewRecords.js"></script>
 }

@@ -49,5 +49,6 @@ namespace NeoSoft_Tarun_Bommadevara.Web.ViewModels
         public IEnumerable<Country> CountryList { get; set; }
         public IEnumerable<City> CityList { get; set; }
         public IEnumerable<EmployeeMaster> Employees { get; set; }
+        public NeosoftRecord PaginatedData { get; set; }
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using NeoSoft.Infrastructure.EF.Models;
 using NeoSoft.Infrastructure.Interfaces;
 using NeoSoft.Infrastructure.Utility;
+using NeoSoft.Services;
 using NeoSoft_Tarun_Bommadevara.Web.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -98,8 +99,15 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         public async Task<IActionResult> ViewRecords()
         {
             EmployeeViewModel response = new EmployeeViewModel();
-            response.Employees = await _employeeService.GetEmployees();
+            var query = new NeoSoftViewQuery().DefaultQuery();
+            var records = await _employeeService.GetEmployees(query);
+            response.PaginatedData = records;
             return View(response);
+        }
+        public async Task<IActionResult> updateusertable(NeoSoftViewQuery query)
+        {
+            var data = await _employeeService.GetEmployees(query);          
+            return PartialView("~/views/employee/partial/_usertablepartial.cshtml", data);
         }
         public async Task<IActionResult> GetRecord(int userId)
         {

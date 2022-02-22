@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Services\\NeoSoft.Services.csproj": {}
+    "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Services\\NeoSoft.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj": {
+    "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj",
         "projectName": "NeoSoft.Infrastructure",
-        "projectPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\0004577\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ravgoud\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\0004577\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ravgoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,21 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Services\\NeoSoft.Services.csproj": {
+    "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Services\\NeoSoft.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Services\\NeoSoft.Services.csproj",
+        "projectUniqueName": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Services\\NeoSoft.Services.csproj",
         "projectName": "NeoSoft.Services",
-        "projectPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Services\\NeoSoft.Services.csproj",
-        "packagesPath": "C:\\Users\\0004577\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Services\\obj\\",
+        "projectPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Services\\NeoSoft.Services.csproj",
+        "packagesPath": "C:\\Users\\ravgoud\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\0004577\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ravgoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +108,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\0004577\\Downloads\\EmployeeRegisterMVC-master\\EmployeeRegisterMVC-master\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj"
+              "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ravgoud\\Pictures\\MyProjects\\NeoSoft.Infrastructure\\NeoSoft.Infrastructure.csproj"
               }
             }
           }
@@ -138,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

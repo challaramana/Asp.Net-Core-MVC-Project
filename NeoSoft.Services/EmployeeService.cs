@@ -24,9 +24,20 @@ namespace NeoSoft.Services
         {
             return _unitofWork.EmployeeRepository.GetCountryDetails();
         }
-        public async Task<IEnumerable<EmployeeMaster>> GetEmployees()
+        public async Task<NeosoftRecord> GetEmployees(NeoSoftViewQuery query)
         {
-            return await _unitofWork.EmployeeRepository.GetAllAsync(i => i.Row_Id != 0, includeProperties: "Country,City,State");
+            var searchQuery = CreateSearchQuery.True<EmployeeMaster>();
+            searchQuery = searchQuery.And(i => i.Row_Id != 0);
+            if (!string.IsNullOrEmpty(query.PanNumber) )
+            {
+                searchQuery = searchQuery.And(i => i.PanNumber == query.PanNumber);
+            }
+            if (!string.IsNullOrEmpty(query.EmailAddress))
+            {
+                searchQuery = searchQuery.And(i => i.EmailAddress == query.EmailAddress);
+            }
+            var records= await _unitofWork.EmployeeRepository.GetAllAsync(searchQuery, includeProperties: "Country,City,State");
+            return new NeosoftRecord(query, records);
         }
         public async Task<EmployeeMaster> GetEmployeRecord(int id)
         {

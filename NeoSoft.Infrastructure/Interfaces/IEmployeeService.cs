@@ -13,7 +13,7 @@ namespace NeoSoft.Infrastructure.Interfaces
         Task<IEnumerable<City>> GetCityDropDownData(int id);
         Task AddEmployee(EmployeeMaster employeeMaster);
         IEnumerable<Country> GetCountryDetails();
-        Task<IEnumerable<EmployeeMaster>> GetEmployees();
+        Task<NeosoftRecord> GetEmployees(NeoSoftViewQuery query);
         Task<EmployeeMaster> GetEmployeRecord(int id);
         Task RemoveEmployeRecord(int id);
         Task UpdateRecord(EmployeeMaster model);

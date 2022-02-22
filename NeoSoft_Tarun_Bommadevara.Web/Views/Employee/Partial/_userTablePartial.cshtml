@@ -1,8 +1,8 @@
-﻿@model NeoSoft_Tarun_Bommadevara.Web.ViewModels.EmployeeViewModel
+﻿@model NeoSoft.Infrastructure.EF.Models.NeosoftRecord
 @using NeoSoft.Infrastructure.Utility;
-<tbody>
+<tbody id="snv-table-body" data-pagenum="@Model.CurrentPage" data-totalpages="@Model.PageCount">
     @{
-        var users = Model.Employees.ToArray();
+        var users = Model.EmployeeMasters.ToArray();
 
         for (int i = 0; i < users.Count(); i++)
         {
