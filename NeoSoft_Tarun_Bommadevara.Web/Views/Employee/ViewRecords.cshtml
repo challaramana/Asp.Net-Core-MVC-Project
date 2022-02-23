@@ -31,7 +31,7 @@
 
 
 </div>
-<form method="post">
+<form method="post" style="display:none">
     <div class="modal fade" id="alertDiv" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="alertDiv" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -60,10 +60,10 @@
 @{
     if (Model.PaginatedData.EmployeeMasters.Count() != 0)
     {
-        <div class="d-flex align-items-center offset-9 align-self-end my-2">
-            <span class="mr-2 d-flex">
+        <div class="d-flex align-items-center offset-8 align-self-end my-2">
+            <span class="mr-4 d-flex">
                 <span class="mr-1 mt-1">Show</span>
-                <select class="form-control" id="pageSizeSelect">
+                <select class="form-control col-sm-9" id="pageSizeSelect">
                     <option value="3" selected>3</option>
                     <option value="5">5</option>
                     <option value="10">10</option>

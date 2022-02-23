@@ -99,10 +99,12 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         }
         public async Task<IActionResult> ViewRecords()
         {
+            _logger.LogInformation("View Records - get method enter");
             EmployeeViewModel response = new EmployeeViewModel();
             var query = new NeoSoftViewQuery().DefaultQuery();
             var records = await _employeeService.GetEmployees(query);
             response.PaginatedData = records;
+            _logger.LogInformation("View Records - get method exis");
             return View(response);
         }
         public async Task<IActionResult> updateusertable(NeoSoftViewQuery query)
@@ -112,9 +114,10 @@ namespace NeoSoft_Tarun_Bommadevara.Web.Controllers
         }
         public async Task<IActionResult> GetRecord(int userId)
         {
+           
             EmployeeViewModel response = new EmployeeViewModel();
             var data = await _employeeService.GetEmployeRecord(userId);
-            response = _mapper.Map<EmployeeViewModel>(data);
+            response = _mapper.Map<EmployeeViewModel>(data);          
             return RedirectToAction("CreateEmployee", response);
         }
         public async Task<IActionResult> RemoveRecord(int userId)
